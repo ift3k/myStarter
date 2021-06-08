@@ -10,4 +10,14 @@ class UserController extends Controller
     {
         return view('addUser');
     }
+
+    public function listUsers()
+    {
+        return view('listUser');
+    }
+
+    public function editUsers()
+    {
+        return view('editUser');
+    }
 }

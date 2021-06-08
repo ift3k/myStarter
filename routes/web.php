@@ -29,4 +29,14 @@ Route::prefix('user')->group(function () {
         '/add',
         [UserController::class, 'showUsers']
     )->name('showUsers');
+
+    Route::get(
+        '/list',
+        [UserController::class, 'listUsers']
+    )->name('listUsers');
+
+    Route::get(
+        '/edit',
+        [UserController::class, 'editUsers']
+    )->name('editUsers');
 });
